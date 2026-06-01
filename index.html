@@ -1,0 +1,4 @@
+<!DOCTYPE html><html><head><script src="https://cdn.tailwindcss.com"></script><script src="interpreter.js"></script></head><body class="bg-gray-900 text-white p-10"><h1 class="text-4xl mb-5">محرر شمس</h1><textarea id="code" class="w-full h-64 p-4 text-black">عرف س كـ 5
+كرر 3 مرات {
+  اطبع "شمس"
+}</textarea><button onclick="run()" class="bg-orange-500 p-2 mt-2">نفذ الكود</button><pre id="output" class="mt-5 p-4 bg-black"></pre><script>function run(){document.getElementById('output').innerText=''; window.runCustomCode(document.getElementById('code').value, (o)=>document.getElementById('output').innerText += o + '\n');}</script></body></html>
